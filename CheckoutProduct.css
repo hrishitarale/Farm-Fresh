@@ -1,0 +1,42 @@
+.checkoutProduct{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.checkoutProduct_info{
+    padding-left: 20px;
+}
+
+.checkoutProduct_info button{
+    background: rgb(18, 159, 30);
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: rgb(18, 159, 30);
+    color: white;
+}
+
+.checkoutProduct_image{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.checkoutProduct_title{
+    font-size: 17px;
+    font-weight: 800;
+}
+.checkoutProduct_quantity{
+    display: flex;
+    flex-direction: row;
+}
+.checkoutProduct_quantity h3{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 40px;
+}
+.checkoutProduct_quantity button {
+    width: 25px;
+} 

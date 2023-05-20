@@ -1,0 +1,110 @@
+
+/*registration*/
+.container{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(18, 159, 30),white);
+    margin-bottom: 100px;
+}
+.registration{
+    width: 600px;
+    height: 500px;
+    margin-top: 30px;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    background-color: rgb(251, 247, 247);
+    margin-right: 15px;
+}
+.registration_title{
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align:left;
+}
+
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #9b59b6;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+.register_button{
+    background: rgb(18, 159, 30);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 30px;
+    border-color: rgb(18, 159, 30); 
+    font-weight: 550;  
+    font-size: 20px;
+    color: white;
+}
+.register_button:hover{
+    background-color: rgb(5, 92, 13);
+    border-color:  rgb(5, 92, 13);
+    color: black;
+    cursor: pointer;
+}

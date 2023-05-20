@@ -1,0 +1,36 @@
+.carousel_product{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 360px;
+    min-width: 200px;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.carousel_product img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.carousel_product button{
+    background-color: rgb(18, 159, 30) ;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(18, 159, 30);
+    margin-top: 10px;
+    color: white;
+}
+.product_price{
+    margin-top: 5px;
+}
+.product_info{
+    height: 100px;
+    margin-bottom:15px;
+}

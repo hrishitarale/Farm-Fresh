@@ -1,0 +1,98 @@
+.container{
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(rgb(18, 159, 30),white);
+}
+.image{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+}
+.login{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.login_container{
+    width: 290px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    background-color: rgb(251, 247, 247);
+}
+.login_container h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align:center;
+}
+.login_container form h4{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.login_container form input{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 5px; ;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.login_button{
+    background: rgb(18, 159, 30);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 30px;
+    border-color: rgb(18, 159, 30); 
+    font-weight: 550;  
+    font-size: 20px;
+    color: white;
+}
+.login_button:hover{
+  background-color: rgb(5, 92, 13);
+  border-color:  rgb(5, 92, 13);
+  color: black;
+  cursor: pointer;
+}
+
+.signin{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  justify-content: center;
+  text-align: center;
+}
+.login_container button{
+    background: rgb(18, 159, 30);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-color: rgb(18, 159, 30); 
+    font-weight: 550;  
+    font-size: 20px;
+    color: white;
+}
+.login_container button:hover{
+  background-color: rgb(5, 92, 13);
+  border-color:  rgb(5, 92, 13);
+  color: black;
+  cursor: pointer;
+}

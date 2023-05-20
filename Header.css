@@ -1,0 +1,114 @@
+.header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+.header_logo{
+    height: 75px;
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 2px;
+}
+
+/* code for search icon
+.header_searchIcon{
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+}*/
+.header_optionLineOne{
+    font-size: 10px;
+}
+.header_optionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.header_optionUser{
+    height: 15px;
+    width: 15px;
+    margin-left: 1000px;
+    margin-right: 20px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_optionBasket{
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.category_module_title{
+    text-decoration: none;
+    color: white;
+}
+.category_list{
+    position: relative;
+}
+.category_dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}
+
+.category_list:hover .category_dropdown{
+    display: block;
+}
+.category_list_items{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+.category_list_items li{
+    list-style-type: none ;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+.category_list_items li:hover .category_dropdown{
+    display: block;
+}
+
+.subcategory_list_items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.subcategory_list_items li{
+    padding: 5px 0;
+}
+
+.subcategory_list_items li:hover{
+    background-color: #f2f2f2;
+}
+
+.subcategory_list_items li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.subcategory_list_items li a:hover{
+    color: #131921;
+}

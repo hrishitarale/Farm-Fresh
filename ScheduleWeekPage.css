@@ -1,0 +1,25 @@
+.scheduleWeekPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .scheduleWeekPage_title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .scheduleWeekPage_products {
+    width: 800px;
+  }
+  
+  .scheduleWeekPage_deliveryDate {
+    margin-top: 20px;
+  }
+  
+  .scheduleWeekPage_deliveryDate label {
+    margin-right: 10px;
+  }
+  
