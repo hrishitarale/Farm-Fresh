@@ -13,13 +13,13 @@ const Fruits = () => {
     <div className='fruits_main'>
         <Header />
         <div className='product_row'>
-            <Product id="200" title='Pomegranate' price={70} image={Pomegranate}  />
-            <Product id="201" title='Apple' price={60.00} image={apple1}  />
-            <Product id="202" title='Orange' price={70.00} image={orange}  />
+            <Product id="200" title='Pomegranate' price={70.00} image={Pomegranate}  />
+            <Product id="201" title='Apple' price={140.00} image={apple1}  />
+            <Product id="202" title='Orange' price={150.00} image={orange}  />
             <Product id="203" title='Mango' price={120.00} image={mango} />
         </div>
         <div className='product_row'>
-            <Product id='204' title='Peru' price={70.00} image={peru} />
+            <Product id='204' title='Guava' price={150.00} image={peru} />
             <Product id='205' title='Watermelon' price={80} image={Watermelon} />
         </div>
     </div>

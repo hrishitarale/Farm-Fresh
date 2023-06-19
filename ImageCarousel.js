@@ -1,5 +1,4 @@
 import Carousel from 'react-multi-carousel';
-// import React, {useRef, useState} from 'react';
 import "react-multi-carousel/lib/styles.css";
 import Mycard from './Mycard';
 import apple1 from "./img/apple1.png";
@@ -8,7 +7,6 @@ import potato from "./img/potato.png";
 import flower from "./img/flower.png";
 import karal from "./img/karal.png";
 import gawar from "./img/gawar.png";
-
 function Imagecarousel(){
     const responsive = {
         superLargeDesktop: {
@@ -40,42 +38,4 @@ function Imagecarousel(){
         </Carousel>
     ) 
 }
-
-
-// const Imagecarousel = () => {
-//     const [index, setIndex] = useState(0);
-//     const length = 8;
-
-//     const btnpressprev = () => {
-//         const newIndex = index - 1;
-//         setIndex(newIndex < 0?length - 1: newIndex);
-//     };
-
-//     const btnpressnext = () => {
-//         const newIndex = index + 1;
-//         setIndex(newIndex >= length ? 0: newIndex);
-//     };
-//     return (
-//         <>
-//         <div className='container_carousel' >
-//             <h2>Best Seller</h2>
-//             <div className="product-carousel">
-//                 <button className="pre-btn" onClick={btnpressprev}><p>&lt;</p></button>
-//                 <button className="next-btn" onClick={btnpressnext}><p>&gt;</p></button>
-
-//                 <div className="product-container" >
-//                     
-//                     
-//                     {/* <Mycard cardno="7" />
-//                     <Mycard cardno="8" />
-//                     <Mycard cardno="9" /> */}
-                    
-                    
-//                 </div>
-//             </div>
-//         </div>  
-//         </>
-//     )
-// };
-
 export default Imagecarousel;

@@ -8,7 +8,6 @@ import flower from "./img/flower.png";
 import karal from "./img/karal.png";
 import Header from './Header';
 import Footer from './Footer';
-
 import Imagecarousel from './ImageCarousel';
 import ProductCategory from './ProductCategory';
 function Home() {
@@ -21,7 +20,6 @@ function Home() {
               <img className="home_image" src={banner1} alt="/" />
               <ProductCategory />
               <div className="home_row1">
-                 
               </div>
               <div className="home_row1">
                   <Product id="111" title='Potato' price={25.00} image={potato}  />
@@ -39,5 +37,4 @@ function Home() {
     </>
   )
 }
-
 export default Home

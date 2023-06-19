@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import './PaymentMethod.css';
 
-function PaymentMethodPage({ handlePaymentMethod }) {
+function PaymentMethodPage() {
   const [paymentMethod, setPaymentMethod] = useState('');
 
   const handlePaymentMethodChange = (event) => {
     setPaymentMethod(event.target.value);
   };
-
   const handleProceedToBuy = () => {
-    handlePaymentMethod(paymentMethod);
     // Add your logic here to handle the payment and navigate to the next page
     alert('Your payment is done!');
+  
   };
-
   return (
     <div className="payment-method-page">
       <h3>Select Payment Method:</h3>

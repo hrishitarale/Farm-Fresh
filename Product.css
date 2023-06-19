@@ -6,7 +6,7 @@
     margin: 50px;
     padding: 20px;
     width: 100%;
-    max-height: 400px;
+    max-height: 450px;
     min-width: 100px;
     background-color: white;
     z-index: 1;
@@ -49,7 +49,22 @@
     color: black;
     cursor: pointer;
 }
+.moreinfo{
+    background-color:#32CD32;
+    width: 215px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(18, 159, 30);
+    margin-top: 10px;
+    color: white;
+}
+.moreinfo:hover{
+    background-color: rgb(5, 92, 13);
+    color: black;
+    cursor: pointer;
+}
 .product_price{
+    text-align: center;
     margin-top: 5px;
 }
 .product_info{

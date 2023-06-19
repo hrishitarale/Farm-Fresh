@@ -5,15 +5,12 @@ import Header from './Header';
 import Footer from './Footer';
 import Subtotal from './Subtotal';
 import './ScheduleWeekPage.css';
-
 function ScheduleWeekPage() {
   const [{ cart }] = useStateValue();
   const [selectedDate, setSelectedDate] = useState('');
-
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };
-
   return (
     <>
         <Header />
@@ -41,7 +38,6 @@ function ScheduleWeekPage() {
                 />
                 <Subtotal />
             </div>
-            
         </div>
         <Footer />
     </>

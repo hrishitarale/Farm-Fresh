@@ -4,13 +4,17 @@ import Cart from './Cart';
 import LoginPage from './LoginPage';
 import Vegetable from './Vegetable';
 import Fruits from './Fruits';
-import Admin from './admin/Admin';
 import Registration from './Registration';
 import ScheduleWeekPage from './ScheduleWeekPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import PaymentMethod from './PaymentMethod';
 import ExoticVegetable from './ExoticVegetable';
+import ExoticFruits from './ExoticFruits';
+import Admin from './Admin';
+import BlogPage from './BlogPage';
+import About from './About';
+import ProductDetails from './ProductDetails';
 function App() {
 
   useEffect(() => {
@@ -20,7 +24,7 @@ function App() {
       <BrowserRouter>
       
       <Routes>
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/Admin" element={<Admin />} />
         <Route path="/" element={<Home />} />
         <Route path="/Cart" element={<Cart />} /> 
         <Route path="/Loginpage" element={<LoginPage />} />
@@ -30,6 +34,10 @@ function App() {
         <Route path="/Registration" element={<Registration />} />
         <Route path="/ScheduleWeekPage" element={<ScheduleWeekPage />} />
         <Route path="/ExoticVegetable" element={<ExoticVegetable />} />
+        <Route path="/ExoticFruits" element={<ExoticFruits />} />
+        <Route path="/BlogPage" element={<BlogPage />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/ProductDetails/:id" element={<ProductDetails />} />
       </Routes>
       </BrowserRouter>
   );

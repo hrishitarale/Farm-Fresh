@@ -11,7 +11,7 @@ function Product({ id, title, image, price }) {
   const [showPieceOptions, setShowPieceOptions] = useState(false); // new state variable
 
   const weights = ['1 Kg', '500 gm', '250 gm'];
-  const pieces = ['12 Piece', '6 Pieces'];
+  const pieces = ['1 Piece', '2 Pieces','3piece'];
 
   useEffect(() => {
     if (weight === '1 Kg') {
@@ -48,9 +48,20 @@ function Product({ id, title, image, price }) {
   };
 
   const handlePieceChange = (event) => {
-    setCurrentPrice(price);
-    setWeight(event.target.value);
+    const selectedPiece = event.target.value;
+    
+    if (selectedPiece === '1 Piece') {
+      setCurrentPrice(price);
+      setWeight('Kg');
+    } else if (selectedPiece === '2 Pieces') {
+      setCurrentPrice(price * 2);
+      setWeight('Kg');
+    } else if (selectedPiece === '3 Pieces') {
+      setCurrentPrice(price * 3);
+      setWeight('Kg');
+    }
   };
+  
 
   const scheduleWeek = () => {
     dispatch({
@@ -72,9 +83,9 @@ function Product({ id, title, image, price }) {
         <div className="product_info">
           <p>{title}</p>
           <p className="product_price">
-            <small>₹</small>
             {showWeightOptions ? (
               <div>
+                <small>₹ </small>
                 <strong>{currentPrice}/</strong>
                 <small>{weight}</small>
               </div>
@@ -91,6 +102,7 @@ function Product({ id, title, image, price }) {
               </div>
             ) : (
               <div>
+                <small>₹</small>
                 <strong>{price}/</strong>
                 <small>per piece</small>
               </div>
@@ -113,7 +125,9 @@ function Product({ id, title, image, price }) {
 
         <button className='addtocart' onClick={addToCart}>Add to cart</button>
         <button className='scheduleweek' onClick={scheduleWeek}>Schedule Week</button>
-               
+        <Link to={`/ProductDetails/${id}`}>
+          <button className="moreinfo">More Information</button>
+        </Link>
       </div>
     </>
   );

@@ -26,7 +26,10 @@
   margin-bottom: 20px;
   text-align:left;
 }
-
+.red-danger{
+  color: red;
+  font-size: 12px;
+}
 .content form .user-details{
     display: flex;
     flex-wrap: wrap;

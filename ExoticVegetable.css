@@ -8,7 +8,6 @@
 .product_row2{
     display: flex;
     z-index: 1;
-    margin-top: 1px;
     margin-left: 5px;
     margin-right: 5px;
 }

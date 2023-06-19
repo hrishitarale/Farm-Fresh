@@ -27,7 +27,7 @@ function ProductCategory(){
                 </Link>
                 </div>
                 <div className="wrap">
-                <Link>
+                <Link to="ExoticFruits">
                     <img src={Fruits} alt="exotic fruits" />
                     <p>Exotic Fruits</p>
                 </Link>

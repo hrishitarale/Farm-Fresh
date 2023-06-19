@@ -6,10 +6,8 @@ import { useStateValue } from  "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import Footer from "./Footer";
 import Imagecarousel from "./ImageCarousel";
-
 function Cart(){
     const [{ cart }, dispatch] = useStateValue();
-
     return(
         <>
         <Header />
@@ -41,5 +39,4 @@ function Cart(){
         </>
     );
 }
-
 export default Cart;
